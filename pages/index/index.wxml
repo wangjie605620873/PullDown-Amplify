@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container" id="container" bindtouchstart="start" bindtouchmove = "touchMove">
+  <view class="img-box" style="transform:scale({{scale}})">
+    {{scale}}
+    <image src="../../images/1.jpg"></image>
+  </view>
+
+  <view class="list-box" class="list-box">
+    <view class="list" wx:for="{{ list}}"> {{item}}</view>
+  </view>
+</view>
